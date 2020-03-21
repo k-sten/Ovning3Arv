@@ -10,7 +10,6 @@ namespace Ovning3Arv
 
         public override string Stats()
         {
-
             string stats = $"Name: {Name} Weight: {Weight} Age: {Age} Is playful: {(IsPlayful ? "Yes" : "No")}";
             return stats;
         }

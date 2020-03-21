@@ -10,10 +10,8 @@ namespace Ovning3Arv
 
         public override string Stats()
         {
-
-                string stats = $"Name: {Name} Weight: {Weight} Age: {Age} Races won: {RacesWon}";
-                return stats;
+            string stats = $"Name: {Name} Weight: {Weight} Age: {Age} Races won: {RacesWon}";
+            return stats;
         }
-        public override string GoodBoy() { return null; }
     }
 }

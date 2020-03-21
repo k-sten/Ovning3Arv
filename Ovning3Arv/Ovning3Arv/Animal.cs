@@ -6,8 +6,7 @@ namespace Ovning3Arv
 {
     abstract class Animal
     {
-        //3.2 8 Birds-klassen
-        //3.2 9 Animals-klassen
+
         private string name;
         private double weight;
         private int age;
@@ -16,6 +15,7 @@ namespace Ovning3Arv
         public int Age { get => age; set => age = value; }
 
         public abstract string Stats();
-        public abstract string GoodBoy();
+        public virtual string GoodBoy()
+        { return null; }
     }
 }

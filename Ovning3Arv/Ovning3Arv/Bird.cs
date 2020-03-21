@@ -10,11 +10,9 @@ namespace Ovning3Arv
 
         public override string Stats()
         {
-
             string stats = $"Name: {Name} Weight: {Weight} Age: {Age} Number of feathers: {NrOfFeathers}";
             return stats;
         }
-        public override string GoodBoy() { return null; }
     }
 
     class Pelican : Bird
