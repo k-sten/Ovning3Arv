@@ -6,6 +6,11 @@ namespace Ovning3Arv
 {
     class Worm : Animal
     {
+        public Worm(string name, double weight, int age, int length) : base(name, weight, age)
+        {
+            Length = length;
+        }
+
         public int Length { get; set; }
 
         public override string Stats()

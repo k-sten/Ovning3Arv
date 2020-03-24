@@ -6,6 +6,11 @@ namespace Ovning3Arv
 {
     class Dog : Animal
     {
+        public Dog(string name, double weight, int age, bool isplayful) : base(name, weight, age)
+        {
+            IsPlayful = isplayful;
+        }
+
         public bool IsPlayful { get; set; }
 
         public override string Stats()

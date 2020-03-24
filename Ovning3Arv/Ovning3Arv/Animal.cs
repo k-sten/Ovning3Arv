@@ -6,13 +6,16 @@ namespace Ovning3Arv
 {
     abstract class Animal
     {
+        public Animal(string name, double weight, int age)
+        {
+            Name = name;
+            Weight = weight;
+            Age = age;
+        }
 
-        private string name;
-        private double weight;
-        private int age;
-        public string Name { get => name; set => name = value; }
-        public double Weight { get => weight; set => weight = value; }
-        public int Age { get => age; set => age = value; }
+        public string Name { get; set; }
+        public double Weight { get; set; }
+        public int Age { get; set; }
 
         public abstract string Stats();
         public virtual string GoodBoy()

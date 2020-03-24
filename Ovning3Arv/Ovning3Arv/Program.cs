@@ -7,19 +7,25 @@ namespace Ovning3Arv
     {
         static void Main(string[] args)
         {
-            Pelican dinkle = new Pelican { Name = "Dinkle", Weight = 20, Age = 5, NrOfFeathers = 100, BeakVolume = 20 };
-            Horse hubert = new Horse { Age = 10, Name = "Hubert", RacesWon = 2, Weight = 800 };
-            Dog bert = new Dog { Age = 2, Weight = 50, Name = "Bert", IsPlayful = true };
-            Dog charlie = new Dog { Age = 8, Weight = 60, Name = "Charlie", IsPlayful = false };
-            Worm macke = new Worm { Age = 1, Length = 9, Name = "Macke", Weight = 0.01 };
+            Pelican pelle = new Pelican("Pelle", 20, 5, 100, 20);
+            Horse hubert = new Horse("Hubert", 800, 10, 2);
+            Dog bert = new Dog("Bert", 50, 2, true);
+            Dog charlie = new Dog("Charlie", 60, 8, false);
+            Worm macke = new Worm("Macke", 0.01, 1, 9);
+            Hedgehog sune = new Hedgehog("Sune", 5, 3, 96);
+            Swan pippi = new Swan("Pippi", 20, 6, 120, true);
+            Flamingo snorken = new Flamingo("Snorken", 17, 9, 51, 44);
 
             List<Animal> Animals = new List<Animal>
             {
-                dinkle,
+                pelle,
                 hubert,
                 bert,
                 macke,
-                charlie
+                charlie,
+                sune,
+                pippi,
+                snorken
             };
 
             foreach (var animal in Animals)
